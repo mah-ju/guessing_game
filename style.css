@@ -1,0 +1,23 @@
+html {
+    font-family: sans-serif;
+  }
+
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+  }
+  body {
+    width: 50%;
+    max-width: 800px;
+    min-width: 480px;
+    margin: 0 auto;
+  }
+  
+  .form input[type="number"] {
+    width: 200px;
+  }
+
+  .lastResult {
+    color: white;
+    padding: 3px;
+  }
