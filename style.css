@@ -4,13 +4,18 @@ html {
 
   h1 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
+    font-weight: 700;
+    text-align: center;
   }
   body {
     width: 50%;
     max-width: 800px;
     min-width: 480px;
     margin: 0 auto;
+  }
+
+  .form{
+    text-align: center;
   }
   
   .form input[type="number"] {

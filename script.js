@@ -52,8 +52,8 @@ guessSubmit.addEventListener("click", checkGuess);
 
 function setGameOver() {
 
-    guessField.disable = true;
-    guessSubmit.disable = true;
+    guessField.disabled = true;
+    guessSubmit.disabled = true;
     resetButton = document.createElement("button");
     resetButton.textContent = "Start new game";
     document.body.append(resetButton);
@@ -73,8 +73,8 @@ function resetGame() {
 
     resetButton.parentNode.removeChild(resetButton);
 
-    guessField.disable = false;
-    guessSubmit.disable = false;
+    guessField.disabled = false;
+    guessSubmit.disabled = false;
     guessField.value ="";
     guessField.focus();
 
@@ -82,4 +82,11 @@ function resetGame() {
 
     randomNumber = Math.floor(Math.random() * 100) + 1;
 
-}
+};
+
+
+window.addEventListener("keydown", (e)=>{
+    if(e.key === "Enter"){
+        checkGuess();
+    }
+    });
